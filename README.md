@@ -14,4 +14,6 @@ PSScriptAnalyzer
 
 ![ant CI workflow](https://github.com/githubfoam/ubuntu_sandbox/workflows/ant%20CI%20workflow/badge.svg?branch=main)  
 
-![maven CI workflow](https://github.com/githubfoam/ubuntu_sandbox/workflows/maven%20CI%20workflow/badge.svg?branch=main)
+![maven CI workflow](https://github.com/githubfoam/ubuntu_sandbox/workflows/maven%20CI%20workflow/badge.svg?branch=main)  
+
+![CMake CI workflow](https://github.com/githubfoam/ubuntu_sandbox/workflows/CMake%20CI%20workflow/badge.svg?branch=main)
