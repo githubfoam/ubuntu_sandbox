@@ -18,4 +18,6 @@ PSScriptAnalyzer
 
 ![CMake CI workflow](https://github.com/githubfoam/ubuntu_sandbox/workflows/CMake%20CI%20workflow/badge.svg?branch=main)  
 
-![python CI workflow](https://github.com/githubfoam/ubuntu_sandbox/workflows/python%20CI%20workflow/badge.svg?branch=main)
+![python CI workflow](https://github.com/githubfoam/ubuntu_sandbox/workflows/python%20CI%20workflow/badge.svg?branch=main)  
+
+![python package CI workflow](https://github.com/githubfoam/ubuntu_sandbox/workflows/python%20package%20CI%20workflow/badge.svg?branch=main)
