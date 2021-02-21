@@ -6,6 +6,29 @@ set -o xtrace
 # set -eox pipefail #safety for script
 
 echo "##############################################"
+echo "# Install Dependencies                       #"
+echo "##############################################"
+
+apt-get install -qqy openjdk-7-jre-headless, nginx, pv, htop, socat, geoip-bin, git, make
+
+echo "##############################################"
+echo "# Configure UFW Firewall                     #"
+echo "##############################################"
+
+#  Allow HTTP(s)
+ufw allow 80
+ufw allow 443
+
+# Allow syslog TCP/UDP in
+ufw allow 514
+
+# Allow syslog SSL in
+ufw allow 1514
+
+# Allow ElasticSearch (not for production)
+ufw allow 9200
+
+echo "##############################################"
 echo "# Setup NXLOG                                #"
 echo "##############################################"
 
@@ -18,12 +41,12 @@ dpkg -i nxlog-ce_2.10.2150_ubuntu_bionic_amd64.deb
 apt-get install -f
 
 # Remove default NXLOG configuration & replace
-rm /etc/nxlog/nxlog.conf 
-cp nxlog.conf /etc/nxlog/nxlog.conf
+# rm /etc/nxlog/nxlog.conf 
+# cp nxlog.conf /etc/nxlog/nxlog.conf
 
 # Create certificates for SSL (directory in config)
-mkdir /etc/nxlog/ssl
-openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout /etc/nxlog/ssl/nxlog.key -out /etc/nxlog/ssl/nxlog.crt
+# mkdir /etc/nxlog/ssl
+# openssl req -x509 -nodes -days 1095 -newkey rsa:2048 -keyout /etc/nxlog/ssl/nxlog.key -out /etc/nxlog/ssl/nxlog.crt
 
 #Install Maxmind GeoIP Modules for IP lookups if removed from dependencies
-apt-get install geoip-bin
+# apt-get install geoip-bin
