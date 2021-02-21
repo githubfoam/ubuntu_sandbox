@@ -9,6 +9,7 @@ echo "##############################################"
 echo "# Install Dependencies                       #"
 echo "##############################################"
 
+apt-get update -qq
 apt-get install -qqy openjdk-7-jre-headless, nginx, pv, htop, socat, geoip-bin, git, make
 
 echo "##############################################"
