@@ -10,8 +10,11 @@ echo "# Setup NXLOG                                #"
 echo "##############################################"
 
 # Download NXLOG
-wget http://nxlog.org/system/files/products/files/1/nxlog-ce_2.8.1248_ubuntu_1404_amd64.deb
-dpkg -i nxlog-ce_2.8.1248_ubuntu_1404_amd64.deb
+#https://nxlog.co/products/nxlog-community-edition/download
+wget https://nxlog.co/system/files/products/files/348/nxlog-ce_2.10.2150_ubuntu_bionic_amd64.deb
+dpkg -i nxlog-ce_2.10.2150_ubuntu_bionic_amd64.deb
+# wget http://nxlog.org/system/files/products/files/1/nxlog-ce_2.8.1248_ubuntu_1404_amd64.deb
+# dpkg -i nxlog-ce_2.8.1248_ubuntu_1404_amd64.deb
 apt-get install -f
 
 # Remove default NXLOG configuration & replace
