@@ -9,4 +9,9 @@ windows linux macos
 security and data integrity tool for monitoring and alerting on file & directory changes.
 https://github.com/Tripwire/tripwire-open-source
 
+secures secrets used by privileged users and machine identities 
+https://github.com/cyberark/conjur
+
+The Secure Production Identity Framework For Everyone (SPIFFE) Project defines a framework and set of standards for identifying and securing communications between application services
+https://github.com/spiffe/spiffe
 ~~~
