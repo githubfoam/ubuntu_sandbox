@@ -8,7 +8,17 @@ windows linux macos
 ~~~
 security and data integrity tool for monitoring and alerting on file & directory changes.
 https://github.com/Tripwire/tripwire-open-source
+~~~
 
+~~~
+a free and open source tool for investigating the Dark Web
+https://github.com/s-rah/onionscan
+
+Extract accounts info from personal pages on various sites for OSINT purpose 
+https://github.com/soxoj/socid-extractor
+~~~
+
+~~~
 secures secrets used by privileged users and machine identities 
 https://github.com/cyberark/conjur
 
