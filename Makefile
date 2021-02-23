@@ -1,6 +1,12 @@
 IMAGE := alpine/fio
 APP:="app/deploy-openesb.sh"
 
+deploy-zeppelin:
+	bash scripts/deploy-zeppelin.sh
+
+deploy-cuda:
+	bash scripts/deploy-cuda.sh
+
 deploy-nxlog:
 	bash scripts/deploy-nxlog.sh
 
