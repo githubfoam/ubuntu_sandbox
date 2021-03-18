@@ -14,6 +14,8 @@ In-depth comparison of files, archives, and directories
 https://diffoscope.org/
 Net2PCAP is a simple network-to-pcap capture file for Linux
 https://github.com/nbareil/net2pcap
+Burp Suite Community Edition,manual tools for exploring web security. Proxy your HTTPS traffic, edit and repeat requests, decode data
+https://portswigger.net/burp/communitydownload
 the Python-based interactive packet manipulation program & library. Supports Python 2 & Python 3
 https://github.com/secdev/scapy
 Toolbox for HPE iLO4 & iLO5 analysis
@@ -109,4 +111,9 @@ Nornir plugin to enable other Nautobot network automation plugins
 https://github.com/nautobot/nautobot-plugin-nornir
 Pluggable multi-threaded framework with inventory management to help operate collections of devices
 https://github.com/nornir-automation/nornir
+~~~
+Android
+~~~
+Mobile application testing toolkit 
+https://github.com/nettitude/scrounger
 ~~~
