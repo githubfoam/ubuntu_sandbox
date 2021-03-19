@@ -16,6 +16,8 @@ Net2PCAP is a simple network-to-pcap capture file for Linux
 https://github.com/nbareil/net2pcap
 Burp Suite Community Edition,manual tools for exploring web security. Proxy your HTTPS traffic, edit and repeat requests, decode data
 https://portswigger.net/burp/communitydownload
+Hetty is an HTTP toolkit for security research
+https://github.com/dstotijn/hetty
 the Python-based interactive packet manipulation program & library. Supports Python 2 & Python 3
 https://github.com/secdev/scapy
 Toolbox for HPE iLO4 & iLO5 analysis
