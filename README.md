@@ -30,6 +30,8 @@ cpu_rec is a tool that recognizes cpu instructions in an arbitrary binary file. 
 https://github.com/airbus-seclab/cpu_rec
 Firmware Analysis Tool 
 https://github.com/ReFirmLabs/binwalk
+Firmware Analysis and Comparison Tool 
+https://github.com/fkie-cad/FACT_core
 ~~~
 vulnerabilities in hypervisors
 ~~~
