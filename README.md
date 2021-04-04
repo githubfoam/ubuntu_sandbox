@@ -123,3 +123,8 @@ Android
 Mobile application testing toolkit 
 https://github.com/nettitude/scrounger
 ~~~
+AWS
+~~~
+Serverless honeytoken
+https://github.com/3CORESec/Trapdoor
+~~~
