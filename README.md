@@ -39,6 +39,9 @@ https://github.com/airbus-seclab/ramooflax_scripts
 https://github.com/airbus-seclab/AppVsWild
 A tool dedicated to the research of vulnerabilities in hypervisors by creating unusual system configurations. 
 https://github.com/airbus-seclab/crashos
+
+CollabFuzz: A Framework for Collaborative Fuzzing 
+https://github.com/vusec/collabfuzz
 ~~~
 ~~~
 a free and open source tool for investigating the Dark Web
