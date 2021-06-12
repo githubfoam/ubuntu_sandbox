@@ -36,32 +36,32 @@ jobs:
   #   - name: "deploy nxlog"
   #     run: sudo make deploy-nxlog        
 
-  ubuntu-1804-cuda-job:
-    name: "ubuntu-18.04"
-    runs-on: ubuntu-18.04
-    steps:
-    - uses: actions/checkout@v2
-    - name: "os fingerprinting"
-      run: hostnamectl status 
-    - name: "build cuda"
-      run: sudo make deploy-cuda          
+  # ubuntu-1804-cuda-job:
+  #   name: "ubuntu-18.04"
+  #   runs-on: ubuntu-18.04
+  #   steps:
+  #   - uses: actions/checkout@v2
+  #   - name: "os fingerprinting"
+  #     run: hostnamectl status 
+  #   - name: "build cuda"
+  #     run: sudo make deploy-cuda          
 
-  ubuntu-2004-nxlog-job:
-    name: "ubuntu-20.04"
-    runs-on: ubuntu-20.04
-    steps:
-    - uses: actions/checkout@v2
-    - name: "os fingerprinting"
-      run: hostnamectl status 
-    - name: "deploy nxlog"
-      run: sudo make deploy-nxlog        
+  # ubuntu-2004-nxlog-job:
+  #   name: "ubuntu-20.04"
+  #   runs-on: ubuntu-20.04
+  #   steps:
+  #   - uses: actions/checkout@v2
+  #   - name: "os fingerprinting"
+  #     run: hostnamectl status 
+  #   - name: "deploy nxlog"
+  #     run: sudo make deploy-nxlog        
 
-  ubuntu-2004-zeppelin-job:
-    name: "ubuntu-20.04"
-    runs-on: ubuntu-20.04
-    steps:
-    - uses: actions/checkout@v2
-    - name: "os fingerprinting"
-      run: hostnamectl status 
-    - name: "deploy zeppelin"
-      run: sudo make deploy-zeppelin        
+  # ubuntu-2004-zeppelin-job:
+  #   name: "ubuntu-20.04"
+  #   runs-on: ubuntu-20.04
+  #   steps:
+  #   - uses: actions/checkout@v2
+  #   - name: "os fingerprinting"
+  #     run: hostnamectl status 
+  #   - name: "deploy zeppelin"
+  #     run: sudo make deploy-zeppelin        
