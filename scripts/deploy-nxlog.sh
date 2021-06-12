@@ -10,7 +10,9 @@ echo "# Install Dependencies                       #"
 echo "##############################################"
 
 apt-get update -qq
-apt-get install -qqy openjdk-7-jre-headless, nginx, pv, htop, socat, geoip-bin, git, make
+# apt-get install -qqy openjdk-7-jre-headless, nginx, pv, htop, socat, geoip-bin, git, make
+apt-get install -qqy openjdk-13-jre-headless, nginx, pv, htop, socat, geoip-bin, git, make
+
 
 echo "##############################################"
 echo "# Configure UFW Firewall                     #"
