@@ -38,8 +38,8 @@ echo "##############################################"
 # Download NXLOG
 #https://nxlog.co/products/nxlog-community-edition/download
 wget https://nxlog.co/system/files/products/files/348/nxlog-ce_2.10.2150_ubuntu_bionic_amd64.deb
-dpkg -i nxlog-ce_2.10.2150_ubuntu_bionic_amd64.deb # method1
-# apt install ./nxlog-ce_2.10.2150_ubuntu_bionic_amd64.deb # method2
+# dpkg -i nxlog-ce_2.10.2150_ubuntu_bionic_amd64.deb # method1
+apt install ./nxlog-ce_2.10.2150_ubuntu_bionic_amd64.deb # method2
 
 # wget http://nxlog.org/system/files/products/files/1/nxlog-ce_2.8.1248_ubuntu_1404_amd64.deb
 # dpkg -i nxlog-ce_2.8.1248_ubuntu_1404_amd64.deb
