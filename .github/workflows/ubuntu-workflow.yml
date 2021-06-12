@@ -9,7 +9,7 @@ on:
 jobs:
 
   ubuntu-latest-nxlog-job:
-    name: "ubuntu-latest"
+    name: "ubuntu-latest - Ubuntu 20.04"
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -25,6 +25,16 @@ jobs:
     #   run: make check
     # - name: make distcheck
     #   run: make distcheck  
+
+  # ubuntu-1804-nxlog-job:
+  #   name: "ubuntu-18.04"
+  #   runs-on: ubuntu-18.04
+  #   steps:
+  #   - uses: actions/checkout@v2
+  #   - name: "os fingerprinting"
+  #     run: hostnamectl status 
+  #   - name: "deploy nxlog"
+  #     run: sudo make deploy-nxlog  
 
   # ubuntu-1604-job:
   #   name: "ubuntu-16.04"
@@ -45,16 +55,7 @@ jobs:
   #     run: hostnamectl status 
   #   - name: "build cuda"
   #     run: sudo make deploy-cuda          
-
-  # ubuntu-2004-nxlog-job:
-  #   name: "ubuntu-20.04"
-  #   runs-on: ubuntu-20.04
-  #   steps:
-  #   - uses: actions/checkout@v2
-  #   - name: "os fingerprinting"
-  #     run: hostnamectl status 
-  #   - name: "deploy nxlog"
-  #     run: sudo make deploy-nxlog        
+    
 
   # ubuntu-2004-zeppelin-job:
   #   name: "ubuntu-20.04"
