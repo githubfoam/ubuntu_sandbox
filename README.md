@@ -131,3 +131,11 @@ AWS
 Serverless honeytoken
 https://github.com/3CORESec/Trapdoor
 ~~~
+log analytics,SIEM
+~~~
+ship data to ELK, Graylog, Loggly or some other SIEM
+supports TCP and TLS based network transport and message buffering
+common data sources such as the Windows Eventlog, flat files and syslog
+parse and generate CSV, W3C, GELF, JSON, XML and KVP formats
+https://nxlog.co/products/nxlog-community-edition
+~~~
