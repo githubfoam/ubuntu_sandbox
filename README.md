@@ -14,8 +14,6 @@ In-depth comparison of files, archives, and directories
 https://diffoscope.org/
 Net2PCAP is a simple network-to-pcap capture file for Linux
 https://github.com/nbareil/net2pcap
-Burp Suite Community Edition,manual tools for exploring web security. Proxy your HTTPS traffic, edit and repeat requests, decode data
-https://portswigger.net/burp/communitydownload
 Hetty is an HTTP toolkit for security research
 https://github.com/dstotijn/hetty
 the Python-based interactive packet manipulation program & library. Supports Python 2 & Python 3
@@ -24,6 +22,12 @@ Toolbox for HPE iLO4 & iLO5 analysis
 https://github.com/airbus-seclab/ilo4_toolbox
 NAT-aware multipath tracerouting tool 
 https://github.com/insomniacslk/dublin-traceroute
+~~~
+~~~
+Burp Suite Community Edition,manual tools for exploring web security. Proxy your HTTPS traffic, edit and repeat requests, decode data
+https://portswigger.net/burp/communitydownload
+Ruby command-line interface to Burp Suite's REST API 
+https://github.com/pentestgeek/burpcommander
 ~~~
 ~~~
 Binary code static analyser, with IDA integration
