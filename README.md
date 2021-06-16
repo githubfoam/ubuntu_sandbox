@@ -28,6 +28,8 @@ Burp Suite Community Edition,manual tools for exploring web security. Proxy your
 https://portswigger.net/burp/communitydownload
 Ruby command-line interface to Burp Suite's REST API 
 https://github.com/pentestgeek/burpcommander
+Burp Commander written in Go
+https://github.com/joanbono/Gurp
 ~~~
 ~~~
 Binary code static analyser, with IDA integration
