@@ -30,6 +30,8 @@ Ruby command-line interface to Burp Suite's REST API
 https://github.com/pentestgeek/burpcommander
 Burp Commander written in Go
 https://github.com/joanbono/Gurp
+Burp Automator - A Burp Suite Automation Tool.Dynamic Application Security Testing (DAST) 
+https://github.com/tristanlatr/burpa
 ~~~
 ~~~
 Binary code static analyser, with IDA integration
