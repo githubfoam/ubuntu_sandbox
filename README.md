@@ -32,6 +32,8 @@ Burp Commander written in Go
 https://github.com/joanbono/Gurp
 Burp Automator - A Burp Suite Automation Tool.Dynamic Application Security Testing (DAST) 
 https://github.com/tristanlatr/burpa
+A collection of scripts used to interact with the Burp Rest API
+https://github.com/laconicwolf/Burp-API-Scripts
 ~~~
 ~~~
 Binary code static analyser, with IDA integration
