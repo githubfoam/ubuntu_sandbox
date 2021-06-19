@@ -36,6 +36,10 @@ A collection of scripts used to interact with the Burp Rest API
 https://github.com/laconicwolf/Burp-API-Scripts
 ~~~
 ~~~
+obfuscated meterpreter shells
+https://github.com/smokeme/payloadGenerator
+~~~
+~~~
 Binary code static analyser, with IDA integration
 https://github.com/airbus-seclab/bincat
 cpu_rec is a tool that recognizes cpu instructions in an arbitrary binary file. It can be used as a standalone tool, or as a plugin for binwalk
