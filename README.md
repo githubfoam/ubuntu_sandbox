@@ -153,3 +153,9 @@ common data sources such as the Windows Eventlog, flat files and syslog
 parse and generate CSV, W3C, GELF, JSON, XML and KVP formats
 https://nxlog.co/products/nxlog-community-edition
 ~~~
+~~~
+Kubesploit is a cross-platform post-exploitation HTTP/2 Command & Control server and agent dedicated for containerized environments written in Golang
+https://github.com/cyberark/kubesploit
+Merlin is a cross-platform post-exploitation Command & Control server and agent written in Go.
+https://github.com/Ne0nd0g/merlin
+~~~
