@@ -159,3 +159,7 @@ https://github.com/cyberark/kubesploit
 Merlin is a cross-platform post-exploitation Command & Control server and agent written in Go.
 https://github.com/Ne0nd0g/merlin
 ~~~
+~~~
+Cobalt Strike Python API 
+https://github.com/dcsync/pycobalt
+~~~
