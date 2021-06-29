@@ -140,10 +140,12 @@ Android
 Mobile application testing toolkit 
 https://github.com/nettitude/scrounger
 ~~~
-AWS
+AWS/Azure/GCP/Cloud
 ~~~
 Serverless honeytoken
 https://github.com/3CORESec/Trapdoor
+Cloud Pentesting
+https://github.com/TROUBLE-1/Cloud-Pentesting
 ~~~
 log analytics,SIEM
 ~~~
