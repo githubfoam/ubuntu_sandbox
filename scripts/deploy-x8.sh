@@ -12,8 +12,11 @@ echo "##############################################"
 apt-get update -qq
 # rustc --version #rustc: command not found
 
-curl https://sh.rustup.rs -sSf | sh -s -- -y
-rustc --version
+# curl https://sh.rustup.rs -sSf | sh -s -- -y
+# source $HOME/.cargo/env
+# rustc --version
+
+apt-get install -y cargo
 
 # https://github.com/Sh1Yo/x8
 git clone https://github.com/Sh1Yo/x8
