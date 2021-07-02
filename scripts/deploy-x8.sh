@@ -10,6 +10,10 @@ echo "# Install x8                       #"
 echo "##############################################"
 
 apt-get update -qq
+rustc --version
+
+curl https://sh.rustup.rs -sSf | sh -s -- -y
+rustc --version
 
 # https://github.com/Sh1Yo/x8
 git clone https://github.com/Sh1Yo/x8
