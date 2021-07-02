@@ -10,6 +10,9 @@ deploy-cuda:
 deploy-nxlog:
 	bash scripts/deploy-nxlog.sh
 
+deploy-x8:
+	bash scripts/deploy-x8.sh	
+
 push-image:
 	docker push $(IMAGE)
 .PHONY: deploy-openesb deploy-dashboard push-image

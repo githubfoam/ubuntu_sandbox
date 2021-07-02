@@ -9,14 +9,24 @@ on:
 jobs:
 
   ubuntu-latest-nxlog-job:
-    name: "ubuntu-latest - Ubuntu 20.04"
+    name: "x8 ubuntu-latest - Ubuntu 20.04"
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: "os fingerprinting"
       run: hostnamectl status      
-    - name: "deploy nxlog"
-      run: sudo make deploy-nxlog    
+    - name: "deploy x8"
+      run: sudo make deploy-x8 
+
+  # ubuntu-latest-nxlog-job:
+  #   name: "ubuntu-latest - Ubuntu 20.04"
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - uses: actions/checkout@v2
+  #   - name: "os fingerprinting"
+  #     run: hostnamectl status      
+  #   - name: "deploy nxlog"
+  #     run: sudo make deploy-nxlog    
     # - name: configure
     #   run: ./configure
     # - name: make
