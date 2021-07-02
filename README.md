@@ -165,3 +165,7 @@ https://github.com/Ne0nd0g/merlin
 Cobalt Strike Python API 
 https://github.com/dcsync/pycobalt
 ~~~
+~~~
+Python tool to explore PDF files
+https://github.com/jesparza/peepdf
+~~~
