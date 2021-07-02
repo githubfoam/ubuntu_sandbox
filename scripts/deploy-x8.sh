@@ -10,7 +10,7 @@ echo "# Install x8                       #"
 echo "##############################################"
 
 apt-get update -qq
-rustc --version
+# rustc --version #rustc: command not found
 
 curl https://sh.rustup.rs -sSf | sh -s -- -y
 rustc --version
