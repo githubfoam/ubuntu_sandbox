@@ -20,7 +20,10 @@ git clone https://github.com/Sh1Yo/x8
 cd x8
 cargo build --release
 echo "##############################################"
-echo "#             x8 installed from source       #"
+echo "from source code (rust should be installed)  #"
 echo "##############################################"
 
-wc https://github.com/berzerk0/Probable-Wordlists/blob/master/Real-Passwords/Top12Thousand-probable-v2.txt
+wget https://github.com/berzerk0/Probable-Wordlists/blob/master/Real-Passwords/Top12Thousand-probable-v2.txt
+mv Top12Thousand-probable-v2.txt wordlist.tx
+wc wordlist.txt 
+./x8 -u https://4rt.one/ -w wordlist.txt -c 7 

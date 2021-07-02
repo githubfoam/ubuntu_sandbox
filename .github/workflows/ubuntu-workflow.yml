@@ -8,7 +8,7 @@ on:
 
 jobs:
 
-  ubuntu-latest-nxlog-job:
+  ubuntu-latest-x8-job:
     name: "x8 ubuntu-latest - Ubuntu 20.04"
     runs-on: ubuntu-latest
     steps:
