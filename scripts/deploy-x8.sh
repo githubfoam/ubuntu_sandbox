@@ -25,5 +25,6 @@ echo "##############################################"
 
 wget https://github.com/berzerk0/Probable-Wordlists/blob/master/Real-Passwords/Top12Thousand-probable-v2.txt
 mv Top12Thousand-probable-v2.txt wordlist.tx
-wc wordlist.txt 
-./x8 -u https://4rt.one/ -w wordlist.txt -c 7 
+ls -lai
+# wc wordlist.txt 
+# ./x8 -u https://4rt.one/ -w wordlist.txt -c 7 
