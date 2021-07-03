@@ -13,7 +13,7 @@ deploy-nxlog:
 deploy-x8:
 	bash scripts/deploy-x8.sh	
 
-deploy-x8:
+deploy-cuckoo:
 	bash scripts/deploy-cuckoo.sh	
 
 push-image:

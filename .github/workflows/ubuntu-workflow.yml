@@ -18,7 +18,7 @@ jobs:
     # - name: "deploy x8"
     #   run: sudo make deploy-x8 
     - name: "deploy cuckoo"
-      run: sudo make cuckoo 
+      run: sudo make deploy-cuckoo 
 
 
   # ubuntu-latest-nxlog-job:
