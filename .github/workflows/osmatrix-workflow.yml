@@ -3,7 +3,7 @@ name: "os matrix CI workflow"
 
 on:
   push:
-    branches: [ dev ]
+    branches: [ test ]
   
 
 
