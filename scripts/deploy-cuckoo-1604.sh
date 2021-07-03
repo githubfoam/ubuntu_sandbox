@@ -52,3 +52,12 @@ apt-get install libcap2-bin
 
 setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
 getcap /usr/sbin/tcpdump #verify
+
+# Installing Volatility
+# Cuckoo requires at least version 2.3 of Volatility, but recommends the latest version, Volatility 2.5
+
+# https://github.com/volatilityfoundation/volatility3
+git clone https://github.com/volatilityfoundation/volatility3.git
+# See available options
+python3 vol.py -h
+# python3 vol.py -f /home/user/samples/stuxnet.vmem windows.info #Example
