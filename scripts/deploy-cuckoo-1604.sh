@@ -66,8 +66,18 @@ ls -lai
 # Installing M2Crypto
 # Currently the M2Crypto library is only supported when SWIG has been installed
 apt-get install swig -y
+pip install --upgrade pip
 pip install m2crypto==0.24.0
 
 # Installing guacd
 # optional service that provides the translation layer for RDP, VNC, and SSH for the remote control functionality in the Cuckoo web interface
 apt-get install -y libguac-client-rdp0 libguac-client-vnc0 libguac-client-ssh0 guacd
+
+echo "##############################################"
+echo "#             Installing Cuckoo              #"
+echo "##############################################"
+
+# https://cuckoo.sh/docs/installation/host/installation.html
+sudo usermod -a -G vboxusers cuckoo
+pip install -U pip setuptools
+pip install -U cuckoo
