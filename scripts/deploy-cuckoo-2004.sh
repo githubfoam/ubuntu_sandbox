@@ -21,11 +21,21 @@ apt-get update -qq
 #   python3-pip
 # apt-get install -y python python-pip python-dev libffi-dev libssl-dev
 apt-get install -y python python3-pip python-dev libffi-dev libssl-dev
-apt-get install - python-virtualenv python-setuptools
-apt-get install -y libjpeg-dev zlib1g-dev swig
 
-# In order to use the Django-based Web Interface, MongoDB is required
-apt-get install -y mongodb
+# E: Package 'python-virtualenv' has no installation candidate
+# apt-get install - python-virtualenv python-setuptools
+# apt-get install -y libjpeg-dev zlib1g-dev swig
 
-# In order to use PostgreSQL as database (our recommendation), PostgreSQL will have to be installed 
-apt-get install -y postgresql libpq-dev
+# # In order to use the Django-based Web Interface, MongoDB is required
+# apt-get install -y mongodb
+
+# # In order to use PostgreSQL as database (our recommendation), PostgreSQL will have to be installed 
+# apt-get install -y postgresql libpq-dev
+
+# Virtualization Software
+# install the latest version of VirtualBox on your Ubuntu LTS machine. 
+# Note that Cuckoo supports VirtualBox 4.3, 5.0, 5.1, and 5.2
+echo deb http://download.virtualbox.org/virtualbox/debian xenial contrib | sudo tee -a /etc/apt/sources.list.d/virtualbox.list
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+apt-get update -qq
+apt-get install -y virtualbox-5.2
