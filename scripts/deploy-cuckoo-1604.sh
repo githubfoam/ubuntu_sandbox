@@ -65,8 +65,8 @@ ls -lai
 
 # Installing M2Crypto
 # Currently the M2Crypto library is only supported when SWIG has been installed
-apt-get install swig -y
-pip install --upgrade pip
+# apt-get install swig -y #swig is already the newest version (3.0.8-0ubuntu3)
+sudo -H pip install --upgrade pip
 pip install m2crypto==0.24.0
 
 # Installing guacd
@@ -79,5 +79,13 @@ echo "##############################################"
 
 # https://cuckoo.sh/docs/installation/host/installation.html
 sudo usermod -a -G vboxusers cuckoo
+
+#  a global installation of Cuckoo in your OS works
+# pip install -U pip setuptools
+# pip install -U cuckoo
+
+# ighly recommend installing Cuckoo in a virtualenv
+virtualenv venv
+. venv/bin/activate
 pip install -U pip setuptools
 pip install -U cuckoo
