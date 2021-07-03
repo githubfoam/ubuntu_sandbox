@@ -8,19 +8,28 @@ on:
 
 jobs:
 
-  ubuntu-latest-from-source-job:
-    name: "from source ubuntu-latest - Ubuntu 20.04"
+  # ubuntu-latest-from-source-job:
+  #   name: "from source ubuntu-latest - Ubuntu 20.04"
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - uses: actions/checkout@v2
+  #   - name: "os fingerprinting"
+  #     run: hostnamectl status      
+    # - name: "deploy x8"
+    #   run: sudo make deploy-x8 
+
+
+  ubuntu-2004-cuckoo-job:
+    name: "ubuntu 20.04"
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: "os fingerprinting"
       run: hostnamectl status      
-    # - name: "deploy x8"
-    #   run: sudo make deploy-x8 
     - name: "deploy cuckoo"
-      run: sudo make deploy-cuckoo 
+      run: sudo make deploy-cuckoo-2004  
 
-  ubuntu-1804-nxlog-job:
+  ubuntu-1804-cuckoo-job:
     name: "ubuntu-18.04"
     runs-on: ubuntu-18.04
     steps:
@@ -28,17 +37,17 @@ jobs:
     - name: "os fingerprinting"
       run: hostnamectl status 
     - name: "deploy cuckoo"
-      run: sudo make deploy-cuckoo        
+      run: sudo make deploy-cuckoo-1804         
 
   ubuntu-1604-job:
-    name: "ubuntu-16.04"
+    name: "ubuntu-16.04-cuckoo-job"
     runs-on: ubuntu-16.04
     steps:
     - uses: actions/checkout@v2
     - name: "os fingerprinting"
       run: hostnamectl status  
     - name: "deploy cuckoo"
-      run: sudo make deploy-cuckoo 
+      run: sudo make deploy-cuckoo-1604 
 
   macos-latest-cuckoo:
       name: "cuckoo macos-latest 10.15.7"
@@ -61,7 +70,9 @@ jobs:
       - name: "osfingerprinting"
         run: uname -a    
       - name: "Installing Python libraries"
-        run: brew install libmagic cairo pango openssl                                 
+        run: brew install libmagic cairo pango openssl
+      - name: "expose the openssl header files in the standard GCC/Clang include directory"
+        run: cd /usr/local/include && ln -s ../opt/openssl/include/openssl .                                         
 
 
   # macos-110:
