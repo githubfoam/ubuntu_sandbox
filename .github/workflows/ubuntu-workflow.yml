@@ -20,7 +20,7 @@ jobs:
 
 
   ubuntu-2004-cuckoo-job:
-    name: "ubuntu 20.04-cuckoo-job"
+    name: "ubuntu-latest-20.04-cuckoo-job"
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -59,10 +59,6 @@ jobs:
         run: brew update      
       - name: "check on brew version"
         run: brew --version   #Homebrew 2.5.12   
-      # - name: "brew cask list"
-      #   run:   brew list --cask #Warning: Calling brew cask list is deprecated! Use brew list [--cask] instead.
-      # - name: "brew list --formula"
-      #   run: brew list --formula #List all the installed formulas
       - name: "Get OS X System Version"
         run: sw_vers       
       - name: "Get Mac System Details with system_profiler"
@@ -75,55 +71,47 @@ jobs:
         run: cd /usr/local/include && ln -s ../opt/openssl/include/openssl .                                         
 
 
-  # macos-110:
-  #     name: "macos-11.0"
-  #     runs-on: macos-11.0 # ProductVersion 11.0.1
-  #     steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v1
-  #     - name: "brew update"
-  #       run: brew update      
-  #     # - name: "brew upgrade"
-  #     #   run: brew upgrade
-  #     - name: "check on brew version"
-  #       run: brew --version   #Homebrew 2.5.12   
-  #     - name: "brew cask list"
-  #       run:   brew list --cask #Warning: Calling brew cask list is deprecated! Use brew list [--cask] instead.
-  #     - name: "brew list --formula"
-  #       run: brew list --formula #List all the installed formulas
-  #     - name: "Get OS X System Version"
-  #       run: sw_vers       
-  #     - name: "Get Mac System Details with system_profiler"
-  #       run: system_profiler | more  
-  #     - name: "osfingerprinting"
-  #       run: uname -a                           
-  #     # - name: "brew doctor"
-  #     #   run: |
-  #     #     brew doctor #Check brew for potential problems 
+  macos-110-cuckoo:
+      name: "cuckoo macos-11.0"
+      runs-on: macos-11.0 # ProductVersion 11.0.1
+      steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: "brew update"
+        run: brew update      
+      - name: "check on brew version"
+        run: brew --version   #Homebrew 2.5.12   
+      - name: "Get OS X System Version"
+        run: sw_vers       
+      - name: "Get Mac System Details with system_profiler"
+        run: system_profiler | more  
+      - name: "osfingerprinting"
+        run: uname -a                           
+      - name: "Installing Python libraries"
+        run: brew install libmagic cairo pango openssl
+      - name: "expose the openssl header files in the standard GCC/Clang include directory"
+        run: cd /usr/local/include && ln -s ../opt/openssl/include/openssl .  
 
-  # macos-1015:
-  #     name: "macos-10.15"
-  #     runs-on: macos-10.15 # ProductVersion 10.15.7
-  #     steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v1
-  #     - name: "brew update"
-  #       run: brew update      
-  #     # - name: "brew upgrade"
-  #     #   run: brew upgrade
-  #     - name: "check on brew version"
-  #       run: brew --version   #Homebrew 2.5.12   
-  #     - name: "brew cask list"
-  #       run:   brew list --cask #Warning: Calling brew cask list is deprecated! Use brew list [--cask] instead.
-  #     - name: "brew list --formula"
-  #       run: brew list --formula #List all the installed formulas
-  #     - name: "Get OS X System Version"
-  #       run: sw_vers       
-  #     - name: "Get Mac System Details with system_profiler"
-  #       run: system_profiler | more  
-  #     - name: "osfingerprinting"
-  #       run: uname -a                           
-  
+  macos-1015-cuckoo:
+      name: "cuckoo macos-10.15"
+      runs-on: macos-10.15 # ProductVersion 10.15.7
+      steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: "brew update"
+        run: brew update      
+      - name: "check on brew version"
+        run: brew --version   #Homebrew 2.5.12   
+      - name: "Get OS X System Version"
+        run: sw_vers       
+      - name: "Get Mac System Details with system_profiler"
+        run: system_profiler | more  
+      - name: "osfingerprinting"
+        run: uname -a                           
+      - name: "Installing Python libraries"
+        run: brew install libmagic cairo pango openssl
+      - name: "expose the openssl header files in the standard GCC/Clang include directory"
+        run: cd /usr/local/include && ln -s ../opt/openssl/include/openssl . 
 
   # ubuntu-latest-nxlog-job:
   #   name: "ubuntu-latest - Ubuntu 20.04"
