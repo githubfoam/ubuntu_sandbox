@@ -59,7 +59,7 @@ getcap /usr/sbin/tcpdump #verify
 # https://github.com/volatilityfoundation/volatility3
 git clone https://github.com/volatilityfoundation/volatility3.git
 # See available options
-volatility3
+cd volatility3
 python3 vol.py -h
 # python3 vol.py -f /home/user/samples/stuxnet.vmem windows.info #Example
 
