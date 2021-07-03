@@ -32,3 +32,22 @@ echo deb http://download.virtualbox.org/virtualbox/debian xenial contrib | sudo 
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 apt-get update -qq
 apt-get install -y virtualbox-5.2
+
+# Installing tcpdump
+apt-get install -y tcpdump apparmor-utils
+# the AppArmor profile disabling (the aa-disable command) is only required 
+# when using the default CWD directory as AppArmor would otherwise prevent the creation of the actual PCAP files 
+aa-disable /usr/sbin/tcpdump
+apt-get install tcpdump -y 
+
+# Tcpdump requires root privileges, but since you don’t want Cuckoo to run as root 
+# you’ll have to set specific Linux capabilities to the binary
+groupadd pcap
+usermod -a -G pcap cuckoo
+chgrp pcap /usr/sbin/tcpdump
+
+# If setcap installed
+apt-get install libcap2-bin
+
+setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
+getcap /usr/sbin/tcpdump #verify
