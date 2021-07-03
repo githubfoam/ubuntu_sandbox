@@ -13,6 +13,9 @@ deploy-nxlog:
 deploy-x8:
 	bash scripts/deploy-x8.sh	
 
+deploy-x8:
+	bash scripts/deploy-cuckoo.sh	
+
 push-image:
 	docker push $(IMAGE)
 .PHONY: deploy-openesb deploy-dashboard push-image

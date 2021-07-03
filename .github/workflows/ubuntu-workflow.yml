@@ -15,8 +15,11 @@ jobs:
     - uses: actions/checkout@v2
     - name: "os fingerprinting"
       run: hostnamectl status      
-    - name: "deploy x8"
-      run: sudo make deploy-x8 
+    # - name: "deploy x8"
+    #   run: sudo make deploy-x8 
+    - name: "deploy cuckoo"
+      run: sudo make cuckoo 
+
 
   # ubuntu-latest-nxlog-job:
   #   name: "ubuntu-latest - Ubuntu 20.04"
