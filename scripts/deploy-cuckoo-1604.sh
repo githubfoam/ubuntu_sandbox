@@ -38,11 +38,12 @@ apt-get install -y tcpdump apparmor-utils
 # the AppArmor profile disabling (the aa-disable command) is only required 
 # when using the default CWD directory as AppArmor would otherwise prevent the creation of the actual PCAP files 
 aa-disable /usr/sbin/tcpdump
-apt-get install tcpdump -y 
+
 
 # Tcpdump requires root privileges, but since you don’t want Cuckoo to run as root 
 # you’ll have to set specific Linux capabilities to the binary
 groupadd pcap
+useradd cuckoo
 usermod -a -G pcap cuckoo
 chgrp pcap /usr/sbin/tcpdump
 
