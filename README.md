@@ -169,3 +169,8 @@ https://github.com/dcsync/pycobalt
 Python tool to explore PDF files
 https://github.com/jesparza/peepdf
 ~~~
+~~~
+cuckoo
+https://github.com/cuckoosandbox/cuckoo
+https://cuckoosandbox.org/
+~~~
