@@ -153,3 +153,8 @@ common data sources such as the Windows Eventlog, flat files and syslog
 parse and generate CSV, W3C, GELF, JSON, XML and KVP formats
 https://nxlog.co/products/nxlog-community-edition
 ~~~
+~~~
+cuckoo
+https://github.com/cuckoosandbox/cuckoo
+https://cuckoosandbox.org/
+~~~
