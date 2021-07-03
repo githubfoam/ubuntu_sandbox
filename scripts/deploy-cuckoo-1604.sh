@@ -59,33 +59,33 @@ getcap /usr/sbin/tcpdump #verify
 # https://github.com/volatilityfoundation/volatility3
 git clone https://github.com/volatilityfoundation/volatility3.git
 # See available options
-ls -lai
-# python3 vol.py -h
+volatility3
+python3 vol.py -h
 # python3 vol.py -f /home/user/samples/stuxnet.vmem windows.info #Example
 
 # Installing M2Crypto
 # Currently the M2Crypto library is only supported when SWIG has been installed
 # apt-get install swig -y #swig is already the newest version (3.0.8-0ubuntu3)
-sudo -H pip install --upgrade pip
-pip install m2crypto==0.24.0
+# pip install --upgrade pip
+# pip install m2crypto==0.24.0
 
-# Installing guacd
-# optional service that provides the translation layer for RDP, VNC, and SSH for the remote control functionality in the Cuckoo web interface
-apt-get install -y libguac-client-rdp0 libguac-client-vnc0 libguac-client-ssh0 guacd
+# # Installing guacd
+# # optional service that provides the translation layer for RDP, VNC, and SSH for the remote control functionality in the Cuckoo web interface
+# apt-get install -y libguac-client-rdp0 libguac-client-vnc0 libguac-client-ssh0 guacd
 
-echo "##############################################"
-echo "#             Installing Cuckoo              #"
-echo "##############################################"
+# echo "##############################################"
+# echo "#             Installing Cuckoo              #"
+# echo "##############################################"
 
-# https://cuckoo.sh/docs/installation/host/installation.html
-sudo usermod -a -G vboxusers cuckoo
+# # https://cuckoo.sh/docs/installation/host/installation.html
+# sudo usermod -a -G vboxusers cuckoo
 
-#  a global installation of Cuckoo in your OS works
+# #  a global installation of Cuckoo in your OS works
+# # pip install -U pip setuptools
+# # pip install -U cuckoo
+
+# # ighly recommend installing Cuckoo in a virtualenv
+# virtualenv venv
+# . venv/bin/activate
 # pip install -U pip setuptools
 # pip install -U cuckoo
-
-# ighly recommend installing Cuckoo in a virtualenv
-virtualenv venv
-. venv/bin/activate
-pip install -U pip setuptools
-pip install -U cuckoo
