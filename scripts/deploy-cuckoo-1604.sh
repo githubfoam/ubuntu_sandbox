@@ -59,5 +59,15 @@ getcap /usr/sbin/tcpdump #verify
 # https://github.com/volatilityfoundation/volatility3
 git clone https://github.com/volatilityfoundation/volatility3.git
 # See available options
-python3 vol.py -h
+ls -lai
+# python3 vol.py -h
 # python3 vol.py -f /home/user/samples/stuxnet.vmem windows.info #Example
+
+# Installing M2Crypto
+# Currently the M2Crypto library is only supported when SWIG has been installed
+apt-get install swig -y
+pip install m2crypto==0.24.0
+
+# Installing guacd
+# optional service that provides the translation layer for RDP, VNC, and SSH for the remote control functionality in the Cuckoo web interface
+apt-get install -y libguac-client-rdp0 libguac-client-vnc0 libguac-client-ssh0 guacd
