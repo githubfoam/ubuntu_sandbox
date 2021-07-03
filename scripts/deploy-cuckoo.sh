@@ -13,7 +13,6 @@ apt-get update -qq
 
 # https://cuckoo.sh/docs/installation/host/requirements.html
 # software packages from the apt repositories are required to get Cuckoo to install and run properly
-software packages from the apt repositories are required to get Cuckoo to install and run properly
 apt-get install -y python python-pip python-dev libffi-dev libssl-dev
 apt-get install - python-virtualenv python-setuptools
 apt-get install -y libjpeg-dev zlib1g-dev swig
