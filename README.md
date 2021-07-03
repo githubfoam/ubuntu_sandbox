@@ -140,10 +140,12 @@ Android
 Mobile application testing toolkit 
 https://github.com/nettitude/scrounger
 ~~~
-AWS
+AWS/Azure/GCP/Cloud
 ~~~
 Serverless honeytoken
 https://github.com/3CORESec/Trapdoor
+Cloud Pentesting
+https://github.com/TROUBLE-1/Cloud-Pentesting
 ~~~
 log analytics,SIEM
 ~~~
@@ -154,7 +156,16 @@ parse and generate CSV, W3C, GELF, JSON, XML and KVP formats
 https://nxlog.co/products/nxlog-community-edition
 ~~~
 ~~~
-cuckoo
-https://github.com/cuckoosandbox/cuckoo
-https://cuckoosandbox.org/
+Kubesploit is a cross-platform post-exploitation HTTP/2 Command & Control server and agent dedicated for containerized environments written in Golang
+https://github.com/cyberark/kubesploit
+Merlin is a cross-platform post-exploitation Command & Control server and agent written in Go.
+https://github.com/Ne0nd0g/merlin
+~~~
+~~~
+Cobalt Strike Python API 
+https://github.com/dcsync/pycobalt
+~~~
+~~~
+Python tool to explore PDF files
+https://github.com/jesparza/peepdf
 ~~~
