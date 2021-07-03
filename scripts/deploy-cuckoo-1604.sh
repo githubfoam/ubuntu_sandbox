@@ -60,7 +60,8 @@ getcap /usr/sbin/tcpdump #verify
 git clone https://github.com/volatilityfoundation/volatility3.git
 # See available options
 cd volatility3
-python3 vol.py -h
+# RuntimeError: Volatility framework requires python version 3.6.0 or greater
+# python3 vol.py -h
 # python3 vol.py -f /home/user/samples/stuxnet.vmem windows.info #Example
 
 # Installing M2Crypto
