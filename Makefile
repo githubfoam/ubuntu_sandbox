@@ -13,6 +13,9 @@ deploy-nxlog:
 deploy-x8:
 	bash scripts/deploy-x8.sh	
 
+deploy-volatility-2004:
+	bash scripts/deploy-volatility-2004.sh
+
 deploy-cuckoo-2004:
 	bash scripts/deploy-cuckoo-2004.sh
 
