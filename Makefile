@@ -13,6 +13,21 @@ deploy-nxlog:
 deploy-x8:
 	bash scripts/deploy-x8.sh	
 
+deploy-remnux-docker-2004:
+	bash scripts/deploy-remnux-docker-2004.sh
+	
+deploy-remnux-2004:
+	bash scripts/deploy-remnux-2004.sh
+
+deploy-volatility-2004:
+	bash scripts/deploy-volatility-2004.sh
+
+deploy-volatility-1804:
+	bash scripts/deploy-volatility-1804.sh
+	
+deploy-volatility-1604:
+	bash scripts/deploy-volatility-1604.sh		
+
 deploy-cuckoo-2004:
 	bash scripts/deploy-cuckoo-2004.sh
 
