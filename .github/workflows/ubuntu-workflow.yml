@@ -68,8 +68,8 @@ jobs:
       run: hostnamectl status  
       # Volatility 3 
       # RuntimeError: Volatility framework requires python version 3.6.0 or greater
-    - name: "deploy volatility 3"
-      run: sudo make deploy-volatility-1604 
+    # - name: "deploy volatility 3"
+    #   run: sudo make deploy-volatility-1604 
     # - name: "deploy remnux"
     #   run: sudo make deploy-remnux-2004               
     # - name: "deploy cuckoo"
