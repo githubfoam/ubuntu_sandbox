@@ -16,8 +16,11 @@ jobs:
     - name: "os fingerprinting"
       run: hostnamectl status      
     - name: "deploy cuckoo"
-      run: sudo make deploy-cuckoo-2004  
-     
+      run: sudo make deploy-cuckoo-2004   
+      # Volatility 3     OK       
+    - name: "deploy volatility 3"
+      run: sudo make deploy-volatility-2004   
+       
 
 
   ubuntu-1804-job:
@@ -28,8 +31,10 @@ jobs:
     - name: "os fingerprinting"
       run: hostnamectl status 
     - name: "deploy cuckoo"
-      run: sudo make deploy-cuckoo-1804   
-
+      run: sudo make deploy-cuckoo-1804  
+      # Volatility 3   OK    
+    - name: "deploy volatility 3"
+      run: sudo make deploy-volatility-1804   
 
   ubuntu-1604-job:
     name: "ubuntu-16.04"
@@ -39,6 +44,10 @@ jobs:
     - name: "os fingerprinting"
       run: hostnamectl status  
     - name: "deploy cuckoo"
-      run: sudo make deploy-cuckoo-1604 
-                          
+      run: sudo make deploy-cuckoo-1604                           
+      # Volatility 3 
+      # RuntimeError: Volatility framework requires python version 3.6.0 or greater
+    # - name: "deploy volatility 3"
+    #   run: sudo make deploy-volatility-1604 
+                             
 
