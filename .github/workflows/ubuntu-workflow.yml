@@ -16,7 +16,7 @@ jobs:
     - name: "os fingerprinting"
       run: hostnamectl status   
       # Volatility 3     OK       
-    - name: "deploy volatility"
+    - name: "deploy volatility 3"
       run: sudo make deploy-volatility-2004   
     # - name: "deploy remnux"
     #   run: sudo make deploy-remnux-2004   
@@ -48,10 +48,10 @@ jobs:
     - name: "os fingerprinting"
       run: hostnamectl status 
       # Volatility 3   OK    
-    # - name: "deploy volatility"
-    #   run: sudo make deploy-volatility-2004   
+    - name: "deploy volatility 3"
+      run: sudo make deploy-volatility-1804   
     # - name: "deploy remnux"
-    #   run: sudo make deploy-remnux-2004             
+    #   run: sudo make deploy1-remnux-2004             
     # - name: "deploy cuckoo"
     #   run: sudo make deploy-cuckoo-1804   
  #   - name: "deploy nxlog"
@@ -68,8 +68,8 @@ jobs:
       run: hostnamectl status  
       # Volatility 3 
       # RuntimeError: Volatility framework requires python version 3.6.0 or greater
-    # - name: "deploy volatility"
-    #   run: sudo make deploy-volatility-2004 
+    - name: "deploy volatility 3"
+      run: sudo make deploy-volatility-1604 
     # - name: "deploy remnux"
     #   run: sudo make deploy-remnux-2004               
     # - name: "deploy cuckoo"

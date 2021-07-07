@@ -22,6 +22,12 @@ deploy-remnux-2004:
 deploy-volatility-2004:
 	bash scripts/deploy-volatility-2004.sh
 
+deploy-volatility-1804:
+	bash scripts/deploy-volatility-1804.sh
+	
+deploy-volatility-1604:
+	bash scripts/deploy-volatility-1604.sh		
+
 deploy-cuckoo-2004:
 	bash scripts/deploy-cuckoo-2004.sh
 
