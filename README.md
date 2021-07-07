@@ -173,4 +173,6 @@ https://github.com/jesparza/peepdf
 cuckoo
 https://github.com/cuckoosandbox/cuckoo
 https://cuckoosandbox.org/
+Volatility 3: The volatile memory extraction framework
+https://github.com/volatilityfoundation/volatility3
 ~~~
