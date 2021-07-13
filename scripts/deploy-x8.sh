@@ -30,7 +30,9 @@ if [[ $(lsb_release -rs) == "20.04" ]]; then
         wget https://github.com/berzerk0/Probable-Wordlists/blob/master/Real-Passwords/Top12Thousand-probable-v2.txt
         mv Top12Thousand-probable-v2.txt wordlist.txt
         wc wordlist.txt 
-        ./x8 -u https://4rt.one/ -w wordlist.txt -c 7 
+        pwd 
+        ls -lai
+       #  ./x8 -u https://4rt.one/ -w wordlist.txt -c 7 
 
 elif [[ $(lsb_release -rs) == "18.04" ]]; then 
 
@@ -73,7 +75,7 @@ elif [[ $(lsb_release -rs) == "16.04" ]]; then
         mv Top12Thousand-probable-v2.txt wordlist.txt
         wc wordlist.txt 
         ./x8 -u https://4rt.one/ -w wordlist.txt -c 7
-        
+
 else
        echo "Non-compatible version"
 fi
