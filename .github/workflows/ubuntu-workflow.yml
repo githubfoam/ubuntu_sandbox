@@ -21,7 +21,7 @@ jobs:
         cat /etc/lsb-release
         cat /etc/issue
         cat /etc/os-release
-        sudo apt-get install -y neofetch & neofetch    
+        sudo apt-get install -y neofetch && neofetch    
       # Volatility 3     OK       
     - name: "deploy volatility 3"
       run: sudo make deploy-volatility-2004 
