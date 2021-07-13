@@ -25,8 +25,8 @@ jobs:
       # Volatility 3     OK       
     - name: "deploy volatility 3"
       run: sudo make deploy-volatility-2004 
-    # - name: "deploy x8"
-    #   run: sudo make deploy-x8          
+    - name: "deploy x8"
+      run: sudo make deploy-x8          
     # - name: "deploy remnux"
     #   run: sudo make deploy-remnux-2004   
     # - name: "deploy remnux docker"
