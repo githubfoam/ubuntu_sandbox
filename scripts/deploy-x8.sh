@@ -30,9 +30,8 @@ if [[ $(lsb_release -rs) == "20.04" ]]; then
         wget https://github.com/berzerk0/Probable-Wordlists/blob/master/Real-Passwords/Top12Thousand-probable-v2.txt
         mv Top12Thousand-probable-v2.txt wordlist.txt
         wc wordlist.txt 
-        pwd 
-        ls -lai
-       #  ./x8 -u https://4rt.one/ -w wordlist.txt -c 7 
+        x8 
+        ./x8 -u https://4rt.one/ -w wordlist.txt -c 7 
 
 elif [[ $(lsb_release -rs) == "18.04" ]]; then 
 
