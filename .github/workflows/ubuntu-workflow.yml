@@ -22,15 +22,15 @@ jobs:
         cat /etc/issue
         cat /etc/os-release
         sudo apt-get install -y neofetch && neofetch    
+    - name: "deploy dnsutils (dig)"
+      run: |
+        sudo apt-get install -y dnsutils              
+        dig geeksforgeeks.org #query A record      
       # Volatility 3     OK       
     - name: "deploy volatility 3"
       run: sudo make deploy-volatility-2004 
     - name: "deploy x8"
       run: sudo make deploy-x8    
-    - name: "deploy dnsutils - dig"
-      run: |
-        sudo apt-get install -y dnsutils              
-        dig geeksforgeeks.org #query A record
     # - name: "deploy remnux"
     #   run: sudo make deploy-remnux-2004   
     # - name: "deploy remnux docker"
