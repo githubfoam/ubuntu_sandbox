@@ -24,8 +24,9 @@ jobs:
         sudo apt-get install -y neofetch && neofetch    
     - name: "deploy dnsutils (dig)"
       run: |
-        sudo apt-get install -y dnsutils              
+        # sudo apt-get install -y dnsutils  #dnsutils is already the newest version (1:9.16.1-0ubuntu2.8).            
         dig geeksforgeeks.org #query A record      
+        route -Cn
       # Volatility 3     OK       
     - name: "deploy volatility 3"
       run: sudo make deploy-volatility-2004 
