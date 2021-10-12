@@ -16,8 +16,8 @@ jobs:
     - name: "os fingerprinting"
       run: hostnamectl status   
       # Volatility 3     OK       
-    - name: "deploy volatility 3"
-      run: sudo make deploy-volatility-2004   
+    # - name: "deploy volatility 3"
+    #   run: sudo make deploy-volatility-2004   
     # - name: "deploy remnux"
     #   run: sudo make deploy-remnux-2004   
     # - name: "deploy remnux docker"
@@ -26,8 +26,8 @@ jobs:
     #   run: sudo make deploy-cuckoo-2004  
     # - name: "deploy x8"
     #   run: sudo make deploy-x8   
- #   - name: "deploy nxlog"
-  #     run: sudo make deploy-nxlog    
+    - name: "deploy nxlog"
+      run: sudo make deploy-nxlog    
     # - name: configure
     #   run: ./configure
     # - name: make
@@ -48,8 +48,8 @@ jobs:
     - name: "os fingerprinting"
       run: hostnamectl status 
       # Volatility 3   OK    
-    - name: "deploy volatility 3"
-      run: sudo make deploy-volatility-1804   
+    # - name: "deploy volatility 3"
+    #   run: sudo make deploy-volatility-1804   
     # - name: "deploy remnux"
     #   run: sudo make deploy1-remnux-2004             
     # - name: "deploy cuckoo"
@@ -59,13 +59,13 @@ jobs:
  #   - name: "build cuda"
  #     run: sudo make deploy-cuda   
 
-  ubuntu-1604-job:
-    name: "ubuntu-16.04"
-    runs-on: ubuntu-16.04
-    steps:
-    - uses: actions/checkout@v2
-    - name: "os fingerprinting"
-      run: hostnamectl status  
+  # ubuntu-1604-job:
+  #   name: "ubuntu-16.04"
+  #   runs-on: ubuntu-16.04
+  #   steps:
+  #   - uses: actions/checkout@v2
+  #   - name: "os fingerprinting"
+  #     run: hostnamectl status  
       # Volatility 3 
       # RuntimeError: Volatility framework requires python version 3.6.0 or greater
     # - name: "deploy volatility 3"
