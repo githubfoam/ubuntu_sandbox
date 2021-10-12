@@ -14,18 +14,70 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: "os fingerprinting"
-      run: hostnamectl status   
+      run: |
+        hostnamectl status
+        lsb_release -a
+        lsb_release -d
+        cat /etc/lsb-release
+        cat /etc/issue
+        cat /etc/os-release
+        sudo apt-get install -y neofetch && neofetch  
+    # The MRTG 2.17.4 Linux/Unix Installation Guide
+    # - name: "deploy MRTG"
+    #   run: |
+    #     # Install Required Packages
+    #     sudo apt-get install apache2 snmp snmpd -y
+    #     sudo systemctl start apache2
+    #     sudo systemctl enable apache2
+    #     sudo systemctl start snmpd
+    #     sudo systemctl enable snmpd   
+    #     # Install and Configure MRTG 
+    #     sudo apt-get install mrtg -y
+    #     sudo mkdir /var/www/mrtg 
+    #     sudo chown -R www-data:www-data /var/www/mrtg
+    #     #rebuild MRTG configuration
+    #     sudo cfgmaker public@localhost > /etc/mrtg.cfg 
+    #     # Create an index file for the /web server
+    #     sudo indexmaker /etc/mrtg.cfg > /var/www/mrtg/index.html
+    #     # Configure Apache for MRTG
+    #     # create an apache virtual host file for MRTG
+    #     cat <<EOT | sudo tee /etc/apache2/sites-available/mrtg.conf
+    #     <VirtualHost *:80>
+    #     ServerAdmin admin@yourdomain.com
+    #     DocumentRoot "/var/www/mrtg"
+    #     ServerName yourdomain.com
+    #     <Directory "/var/www/mrtg/">
+    #     Options None
+    #     AllowOverride None
+    #     Order allow,deny
+    #     Allow from all
+    #     Require all granted
+    #     </Directory>
+    #     TransferLog /var/log/apache2/mrtg_access.log
+    #     ErrorLog /var/log/apache2/mrtg_error.log
+    #     </VirtualHost>
+    #     EOT        
+    #     cat /etc/apache2/sites-available/mrtg.conf
+    #     # enable virtual host and restart apache service
+    #     sudo a2ensite mrtg
+    #     sudo systemctl restart apache2
+    #     curl http://localhost
+    # - name: "deploy dnsutils (dig)"
+    #   run: |
+    #     # sudo apt-get install -y dnsutils  #dnsutils is already the newest version (1:9.16.1-0ubuntu2.8).            
+    #     dig geeksforgeeks.org #query A record      
+    #     route -Cn
       # Volatility 3     OK       
     # - name: "deploy volatility 3"
-    #   run: sudo make deploy-volatility-2004   
+    #   run: sudo make deploy-volatility-2004 
+    # - name: "deploy x8"
+    #   run: sudo make deploy-x8    
     # - name: "deploy remnux"
     #   run: sudo make deploy-remnux-2004   
     # - name: "deploy remnux docker"
     #   run: sudo make deploy-remnux-docker-2004                     
     # - name: "deploy cuckoo"
-    #   run: sudo make deploy-cuckoo-2004  
-    # - name: "deploy x8"
-    #   run: sudo make deploy-x8   
+    #   run: sudo make deploy-cuckoo-2004   
     - name: "deploy nxlog"
       run: sudo make deploy-nxlog    
     # - name: configure
