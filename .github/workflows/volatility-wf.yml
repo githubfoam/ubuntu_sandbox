@@ -1,4 +1,4 @@
-name: "Ubuntu CI workflow"
+name: "Ubuntu volatility CI workflow"
 
 
 on:
@@ -9,15 +9,35 @@ on:
 
 jobs:
 
+  ubuntu-latest-job:
+    name: "ubuntu-latest"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: "os fingerprinting"
+      run: hostnamectl status        
+      # Volatility 3     OK       
+    - name: "deploy volatility 3"
+      run: sudo make deploy-volatility-latest
+
+  ubuntu-2204-job:
+    name: "ubuntu-latest-22.04"
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: "os fingerprinting"
+      run: hostnamectl status        
+      # Volatility 3     OK       
+    - name: "deploy volatility 3"
+      run: sudo make deploy-volatility-2204
+
   ubuntu-2004-job:
     name: "ubuntu-latest-20.04"
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: "os fingerprinting"
-      run: hostnamectl status      
-    - name: "deploy cuckoo"
-      run: sudo make deploy-cuckoo-2004   
+      run: hostnamectl status       
       # Volatility 3     OK       
     - name: "deploy volatility 3"
       run: sudo make deploy-volatility-2004   
@@ -31,20 +51,10 @@ jobs:
     - uses: actions/checkout@v2
     - name: "os fingerprinting"
       run: hostnamectl status 
-    - name: "deploy cuckoo"
-      run: sudo make deploy-cuckoo-1804  
       # Volatility 3   OK    
     - name: "deploy volatility 3"
       run: sudo make deploy-volatility-1804   
 
-  ubuntu-1604-job:
-    name: "ubuntu-16.04"
-    runs-on: ubuntu-16.04
-    steps:
-    - uses: actions/checkout@v2
-    - name: "os fingerprinting"
-      run: hostnamectl status  
-    - name: "deploy cuckoo"
-      run: sudo make deploy-cuckoo-1604                           
+                         
                              
 

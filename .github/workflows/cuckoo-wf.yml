@@ -1,0 +1,64 @@
+name: "Ubuntu CI workflow"
+
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+      - cron:  '0 0 1 * *' ##execution of a task in the first minute of the month  
+
+jobs:
+
+  ubuntu-latest-job:
+    name: "ubuntu-latest"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: "os fingerprinting"
+      run: hostnamectl status      
+    - name: "deploy cuckoo"
+      run: sudo make deploy-cuckoo-latest    
+       
+
+  ubuntu-2204-job:
+    name: "ubuntu-latest-20.04"
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: "os fingerprinting"
+      run: hostnamectl status      
+    - name: "deploy cuckoo"
+      run: sudo make deploy-cuckoo-2204  
+
+  ubuntu-2004-job:
+    name: "ubuntu 20.04"
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: "os fingerprinting"
+      run: hostnamectl status      
+    - name: "deploy cuckoo"
+      run: sudo make deploy-cuckoo-2004    
+       
+  ubuntu-1804-job:
+    name: "ubuntu-18.04"
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: "os fingerprinting"
+      run: hostnamectl status 
+    - name: "deploy cuckoo"
+      run: sudo make deploy-cuckoo-1804  
+  
+
+  # ubuntu-1604-job:
+  #   name: "ubuntu-16.04"
+  #   runs-on: ubuntu-16.04
+  #   steps:
+  #   - uses: actions/checkout@v2
+  #   - name: "os fingerprinting"
+  #     run: hostnamectl status  
+  #   - name: "deploy cuckoo"
+  #     run: sudo make deploy-cuckoo-1604                           
+                             
+
