@@ -21,7 +21,7 @@ jobs:
       run: sudo make deploy-volatility-latest
 
   ubuntu-2204-job:
-    name: "ubuntu-latest-22.04"
+    name: "ubuntu-22.04"
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v2
@@ -32,7 +32,7 @@ jobs:
       run: sudo make deploy-volatility-2204
 
   ubuntu-2004-job:
-    name: "ubuntu-latest-20.04"
+    name: "ubuntud-20.04"
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

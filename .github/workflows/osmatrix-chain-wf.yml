@@ -34,6 +34,8 @@ jobs:
     - name: "os fingerprinting"
       run: hostnamectl status 
 
+# https://github.com/githubfoam/ubuntu_sandbox/runs/6704481408?check_suite_focus=true
+# Package python-dev is not available, but is referred to by another package
   ubuntu-2204-job:
     name: "ubuntu-22.04"
     runs-on: ubuntu-22.04

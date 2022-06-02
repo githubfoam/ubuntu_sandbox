@@ -1,9 +1,12 @@
 # ubuntu_sandbox
 
-![Ubuntu CI workflow](https://github.com/githubfoam/ubuntu_sandbox/workflows/Ubuntu%20CI%20workflow/badge.svg?branch=main)  
 
-windows linux macos  
-![os matrix CI workflow](https://github.com/githubfoam/ubuntu_sandbox/workflows/os%20matrix%20CI%20workflow/badge.svg?branch=main)  
+[![ubuntu os matrix chain CI workflow](https://github.com/githubfoam/ubuntu_sandbox/actions/workflows/osmatrix-chain-wf.yml/badge.svg)](https://github.com/githubfoam/ubuntu_sandbox/actions/workflows/osmatrix-chain-wf.yml)  
+[![ubuntu os matrix compact CI workflow](https://github.com/githubfoam/ubuntu_sandbox/actions/workflows/osmatrix-compact-wf.yml/badge.svg)](https://github.com/githubfoam/ubuntu_sandbox/actions/workflows/osmatrix-compact-wf.yml)  
+
+[![Ubuntu volatility CI workflow](https://github.com/githubfoam/ubuntu_sandbox/actions/workflows/volatility-wf.yml/badge.svg)](https://github.com/githubfoam/ubuntu_sandbox/actions/workflows/volatility-wf.yml)  
+[![Ubuntu cuckoo CI workflow](https://github.com/githubfoam/ubuntu_sandbox/actions/workflows/cuckoo-wf.yml/badge.svg)](https://github.com/githubfoam/ubuntu_sandbox/actions/workflows/cuckoo-wf.yml)  
+
 
 ~~~
 https://github.com/actions/virtual-environments
