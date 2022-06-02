@@ -1,4 +1,4 @@
-name: "Ubuntu CI workflow"
+name: "Ubuntu cuckoo CI workflow"
 
 
 on:
@@ -21,7 +21,7 @@ jobs:
        
 
   ubuntu-2204-job:
-    name: "ubuntu-latest-20.04"
+    name: "ubuntu-22.04"
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v2

@@ -1,4 +1,4 @@
-name: "ubuntu os matrix CI workflow"
+name: "ubuntu os matrix chain CI workflow"
 
 
 on:
